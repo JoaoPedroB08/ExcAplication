@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    color: #333; /* Cor de texto padrão */
+}
+
+.container-exercicio {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+code {
+    background-color: #e3e3e3;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    display: inline-block;
+    white-space: pre-wrap; 
+    width: 100%; /* Faz o código ocupar a largura disponível */
+    box-sizing: border-box; /* Garante que o padding não quebre o layout */
+}
+
+/* ===== NOVOS ESTILOS PARA A VERSÃO INTERATIVA ===== */
+
+/* Estilo para o campo de texto */
+input[type="text"] {
+    width: 100%; /* Ocupa toda a largura */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Garante que o padding não quebre o layout */
+}
+
+/* Estilo para o botão */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff; /* Um azul agradável */
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s; /* Efeito suave na transição */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #0056b3; /* Um tom de azul mais escuro */
+}
