@@ -16,22 +16,24 @@ document.getElementById('resultadoExercicio1').textContent = quantidadeTotalDeAn
 
 //-----------{exercicio 2}---------------
 
-function separarParImpar(nums) {
-    const pares = [];
-    const impares = [];
-    let indiceDosPares = 0;
-    let indiceDosImpares = 0;
+function separarParImpar(numeros) {
+    var pares = [];
+    var impares = [];
 
-    for (let i = 0; i < nums.length; i++) {
-        const numeroAtual = nums[i];
-        if (numeroAtual % 2 === 0) {
-            pares[indiceDosPares] = numeroAtual;
-            indiceDosPares++;
+    function separar(i, p, imp) {
+        if (i >= numeros.length) return;
+
+        var atual = numeros[i];
+        if (atual % 2 === 0) {
+            pares[p] = atual;
+            separar(i + 1, p + 1, imp);
         } else {
-            impares[indiceDosImpares] = numeroAtual;
-            indiceDosImpares++;
+            impares[imp] = atual;
+            separar(i + 1, p, imp + 1);
         }
     }
+
+    separar(0, 0, 0);
     return [pares, impares];
 }
 
